@@ -1,139 +1,227 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --header-height: 4.5rem;
+
+  /* colors */
+  --hue: 36;
+  --hue-second: 0;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 100% 50%);
+  --base-color-second: hsl(var(--hue-second) 0% 0%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 100% 0%);
+  --footer-color: hsl(var(--hue) 100% 50%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+
+  /* Fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM-Sans', sans-serif;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: linear-gradient(to right, #eb840f, #010e1d);
-  }
-  
-  .card {
-    margin-bottom: 20px;
-    border: none;
-  }
-  
-  .box {
-    width: 500px;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background: #191919;
-    text-align: center;
-    transition: 0.25s;
-    margin-top: 100px;
-  }
-  
-  .box input[type='text'],
-  .box input[type='password'] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #3498db;
-    padding: 10px 10px;
-    width: 250px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-  }
-  
-  .box h1 {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-  
-  .box input[type='text']:focus,
-  .box input[type='password']:focus {
-    width: 300px;
-    border-color: #2ecc71;
-  }
-  
-  .box input[type='submit'] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #2ecc71;
-    padding: 14px 40px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-    cursor: pointer;
-  }
-  
-  .box input[type='submit']:hover {
-    background: #2ecc71;
-  }
-  
-  .forgot {
-    text-decoration: underline;
-  }
-  
-  ul.social-network {
-    list-style: none;
-    display: inline;
-    margin-left: 0 !important;
-    padding: 0;
-  }
-  
-  ul.social-network li {
-    display: inline;
-    margin: 0 5px;
-  }
-  
-  .social-network a.icoFacebook:hover {
-    background-color: #3b5998;
-  }
-  
-  .social-network a.icoTwitter:hover {
-    background-color: #33ccff;
-  }
-  
-  .social-network a.icoGoogle:hover {
-    background-color: #bd3518;
-  }
-  
-  .social-network a.icoFacebook:hover i,
-  .social-network a.icoTwitter:hover i,
-  .social-network a.icoGoogle:hover i {
-    color: #fff;
-  }
-  
-  a.socialIcon:hover,
-  .socialHoverClass {
-    color: #44bcdd;
-  }
-  
-  .social-circle li a {
-    display: inline-block;
-    position: relative;
-    margin: 0 auto 0 auto;
-    border-radius: 50%;
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-  }
-  
-  .social-circle li i {
-    margin: 0;
-    line-height: 50px;
-    text-align: center;
-  }
-  
-  .social-circle li a:hover i,
-  .triggeredHover {
-    transform: rotate(360deg);
-    transition: all 0.2s;
-  }
-  
-  .social-circle i {
-    color: #fff;
-    transition: all 0.8s;
-    transition: all 0.8s;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to right, var(--base-color), var(--body-color));
+}
+img {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+/* TopNav Config*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: var(--base-color-second);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: var(--base-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: var(--base-color);
+  color: var(--base-color-second);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: var(--base-color);
+  color: var(--base-color-second);
+}
+
+.title {
+  font: 700 1.25rem var(--title-font);
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+.card {
+  margin-bottom: 20px;
+  border: none;
+  align-items: center;
+  color: var(--title-color);
+  margin-left: 1rem;
+}
+.card-body {
+  background-color: var(--base-color-second);
+  color: var(--text-color);
+}
+.cards {
+  gap: 20px;
+}
+.footer {
+  background-color: var(--base-color-second);
+}
+.footer-title {
+  font: 700 1.25rem var(--title-font);
+  color: var(--footer-color);
+  -webkit-font-smoothing: auto;
+}
+
+.box {
+  width: 31.25rem;
+  padding: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--base-color-second);
+  text-align: center;
+  transition: 0.25s;
+  margin-top: 100px;
+}
+
+.box input[type='text'],
+.box input[type='password'] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 10px 10px;
+  width: 250px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.box input[type='text']:focus,
+.box input[type='password']:focus {
+  width: 300px;
+  border-color: var(--base-color);
+}
+
+.box input[type='submit'] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box input[type='submit']:hover {
+  background: #2ecc71;
+}
+
+.forgot {
+  text-decoration: underline;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.social-network a.icoFacebook:hover {
+  background-color: #3b5998;
+}
+
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+
+.social-network a.icoGoogle:hover {
+  background-color: #bd3518;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+  color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+  color: #44bcdd;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  transform: rotate(360deg);
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #fff;
+  transition: all 0.8s;
+  transition: all 0.8s;
+}
