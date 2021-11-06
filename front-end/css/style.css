@@ -1,3 +1,4 @@
+
 /* RESET */
 * {
   margin: 0;
@@ -25,6 +26,61 @@
   --subtitle-font-size: 1rem;
   --title-font: "Poppins", sans-serif;
   --body-font: "DM-Sans", sans-serif;
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 25%;
+  padding: 200px auto;
+  background: #191919;
+  text-align: center;
+}
+
+.h1-form {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.input1 {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 10px 10px;
+  width: 500px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.btn-form-filme {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.btn-form-filme .cancelar {
+  background-color: red;
+  border: 2px solid #da1919;
+}
+
+.btn-form-container {
+  display: flex;
+  margin: 20px auto;
+  gap: 10px;
 }
 
 body {
