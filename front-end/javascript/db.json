@@ -1,0 +1,70 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "nome": "Rocky Balboa",
+      "sinopse": "Um lutador",
+      "ano_lancamento": "1976",
+      "faturamento": 1000000,
+      "poster": "https://upload.wikimedia.org/wikipedia/pt/1/18/Rocky_poster.jpg",
+      "genero": 1,
+      "created_at": "10/11/2021",
+      "updated_at": "10/11/2021"
+    },
+    {
+      "id": 2,
+      "nome": "Rocky Balboa 2",
+      "sinopse": "A revanche",
+      "ano_lancamento": "1979",
+      "faturamento": 1000000,
+      "poster": "https://cdn.tlc-massive.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=85&ImageId=%27201796.jpg%27&ImageUrl=%27201796.jpg%27&EntityType=%27Item%27&EntityId=%2716369%27&device=web_browser&subscriptions=Anonymous&Width=360&Height=540",
+      "genero": 1,
+      "created_at": "10/11/2021",
+      "updated_at": "10/11/2021"
+    },
+    {
+      "id": 3,
+      "nome": "Rocky Balboa 3",
+      "sinopse": "O Desafio Supremo",
+      "ano_lancamento": "1982",
+      "faturamento": 1000000,
+      "poster": "https://img.elo7.com.br/product/zoom/268AFD5/big-poster-filme-rocky-balboa-3-1982-lo02-tamanho-90x60-cm-presente-geek.jpg",
+      "genero": 1,
+      "created_at": "10/11/2021",
+      "updated_at": "10/11/2021"
+    },
+    {
+      "id": 3,
+      "nome": "Rocky Balboa 3",
+      "sinopse": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "ano_lancamento": "1982",
+      "faturamento": 1000000,
+      "poster": "https://img.elo7.com.br/product/zoom/268AFD5/big-poster-filme-rocky-balboa-3-1982-lo02-tamanho-90x60-cm-presente-geek.jpg",
+      "genero": 1,
+      "created_at": "10/11/2021",
+      "updated_at": "10/11/2021"
+    },
+    {
+      "nome": "Caminho para Eldorado",
+      "sinopse": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "ano_lancamento": "2005",
+      "faturamento": 1000000,
+      "poster": "https://br.web.img3.acsta.net/medias/nmedia/18/90/65/10/20106901.jpg",
+      "genero": 1,
+      "created_at": "10/11/2021",
+      "updated_at": "10/11/2021",
+      "id": 4
+    },
+    {
+      "nome": "Narnia",
+      "sinopse": "A galera entrou no armario e foi parar em outro mundo viajado",
+      "ano_lancamento": "2008",
+      "faturamento": "100000000",
+      "poster": "https://upload.wikimedia.org/wikipedia/pt/thumb/1/10/The_Chronicles_of_Narnia_-_The_Lion%2C_the_Witch_and_the_Wardrobe.jpg/250px-The_Chronicles_of_Narnia_-_The_Lion%2C_the_Witch_and_the_Wardrobe.jpg",
+      "genero": "4",
+      "created_at": "10/11/2021",
+      "updated_at": "10/11/2021",
+      "id": 5
+    }
+  ]
+}

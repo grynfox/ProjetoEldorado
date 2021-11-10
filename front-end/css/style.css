@@ -26,6 +26,8 @@
   --subtitle-font-size: 1rem;
   --title-font: "Poppins", sans-serif;
   --body-font: "DM-Sans", sans-serif;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -48,7 +50,7 @@
   background: none;
   display: block;
   margin: 20px auto;
-  text-align: center;
+  text-align-last:center;
   border: 2px solid #3498db;
   padding: 10px 10px;
   width: 500px;
@@ -81,6 +83,11 @@
   display: flex;
   margin: 20px auto;
   gap: 10px;
+}
+
+.btn-primary {
+  background-color:  var(--base-color);
+  border-color:  var(--base-color);
 }
 
 body {
@@ -137,6 +144,7 @@ img {
   align-items: center;
   color: var(--title-color);
   margin-left: 1rem;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .card-body {
