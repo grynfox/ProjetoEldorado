@@ -1,3 +1,36 @@
+<<<<<<< revIgor
+=======
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --header-height: 4.5rem;
+  /* colors */
+  --hue: 36;
+  --hue-second: 0;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 100% 50%);
+  --base-color-second: hsl(var(--hue-second) 0% 0%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 100% 0%);
+  --footer-color: hsl(var(--hue) 100% 50%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+  /* Fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+  --title-font: "Poppins", sans-serif;
+  --body-font: "DM-Sans", sans-serif;
+}
+
+>>>>>>> main
 .form {
   display: flex;
   flex-direction: column;
@@ -20,7 +53,7 @@
   background: none;
   display: block;
   margin: 20px auto;
-  text-align-last: center;
+  text-align-last:center;
   border: 2px solid #3498db;
   padding: 10px 10px;
   width: 500px;
@@ -55,6 +88,7 @@
   gap: 10px;
 }
 
+<<<<<<< revIgor
 /* RESET */
 * {
   margin: 0;
@@ -80,8 +114,13 @@
   /* Fonts */
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
-  --title-font: 'Poppins', sans-serif;
-  --body-font: 'DM-Sans', sans-serif;
+  --title-font: "Poppins", sans-serif;
+  --body-font: "DM-Sans", sans-serif;
+=======
+.btn-primary {
+  background-color:  var(--base-color);
+  border-color:  var(--base-color);
+>>>>>>> main
 }
 
 body {
@@ -172,8 +211,8 @@ img {
   margin-top: 100px;
 }
 
-.box input[type='text'],
-.box input[type='password'] {
+.box input[type=text],
+.box input[type=password] {
   border: 0;
   background: none;
   display: block;
@@ -194,13 +233,13 @@ img {
   font-weight: 500;
 }
 
-.box input[type='text']:focus,
-.box input[type='password']:focus {
+.box input[type=text]:focus,
+.box input[type=password]:focus {
   width: 300px;
   border-color: var(--base-color);
 }
 
-.box input[type='submit'] {
+.box input[type=submit] {
   border: 0;
   background: none;
   display: block;
@@ -215,7 +254,7 @@ img {
   cursor: pointer;
 }
 
-.box input[type='submit']:hover {
+.box input[type=submit]:hover {
   background: #2ecc71;
 }
 
