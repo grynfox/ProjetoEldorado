@@ -1,4 +1,4 @@
-
+@use 'form-filme';
 /* RESET */
 * {
   margin: 0;
@@ -30,9 +30,6 @@
   --title-font: 'Poppins', sans-serif;
   --body-font: 'DM-Sans', sans-serif;
 }
-
-@use 'form-filme';
-
 
 body {
   margin: 0;
