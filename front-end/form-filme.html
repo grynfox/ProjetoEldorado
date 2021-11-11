@@ -12,21 +12,22 @@
 
     <div class="form">
         <h1 class="h1-form">Cadastro de Filme</h1>
-        <input type="text" class="input1" placeholder="nome">
-        <input type="text" class="input1" placeholder="sinopse">
-        <input type="text" class="input1" placeholder="data de lançamento">
-        <input type="text" class="input1" placeholder="faturamento">
-        <input type="text" class="input1" placeholder="poster">
-        <select class="input1" name="genero" id="genero_id">
+        <input id="nome" type="text" class="input1" placeholder="Nome">
+        <input id="sinopse" type="text" class="input1" placeholder="Sinopse">
+        <input id="data_lancamento"type="text" class="input1" placeholder="Data de Lançamento">
+        <input id="faturamento" type="number" class="input1" placeholder="Faturamento">
+        <input id="poster" type="text" class="input1" placeholder="Pôster">
+        <select id="genero_id" class="input1" name="genero">
             <option value="1">Ação</option>
             <option value="2">Terror</option>
             <option value="3">Comédia</option>
             <option value="4">Drama</option>
         </select>
         <div class="btn-form-container">
-            <button class="btn-form-filme">Enviar</button>
+            <button class="btn-form-filme" id="btn-cadastro-filme">Enviar</button>
             <button class="btn-form-filme cancelar" style="border: 2px solid #fd0000;">Cancelar</button>
         </div>
     </div>
+    <script src="javascript/json-server.js" type="text/javascript"></script>
 </body>
 </html>

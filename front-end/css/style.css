@@ -20,7 +20,7 @@
   background: none;
   display: block;
   margin: 20px auto;
-  text-align: center;
+  text-align-last: center;
   border: 2px solid #3498db;
   padding: 10px 10px;
   width: 500px;
@@ -80,8 +80,8 @@
   /* Fonts */
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
-  --title-font: "Poppins", sans-serif;
-  --body-font: "DM-Sans", sans-serif;
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM-Sans', sans-serif;
 }
 
 body {
@@ -138,6 +138,7 @@ img {
   align-items: center;
   color: var(--title-color);
   margin-left: 1rem;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .card-body {
@@ -171,8 +172,8 @@ img {
   margin-top: 100px;
 }
 
-.box input[type=text],
-.box input[type=password] {
+.box input[type='text'],
+.box input[type='password'] {
   border: 0;
   background: none;
   display: block;
@@ -193,13 +194,13 @@ img {
   font-weight: 500;
 }
 
-.box input[type=text]:focus,
-.box input[type=password]:focus {
+.box input[type='text']:focus,
+.box input[type='password']:focus {
   width: 300px;
   border-color: var(--base-color);
 }
 
-.box input[type=submit] {
+.box input[type='submit'] {
   border: 0;
   background: none;
   display: block;
@@ -214,7 +215,7 @@ img {
   cursor: pointer;
 }
 
-.box input[type=submit]:hover {
+.box input[type='submit']:hover {
   background: #2ecc71;
 }
 
