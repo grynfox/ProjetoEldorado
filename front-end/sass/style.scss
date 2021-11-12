@@ -1,4 +1,5 @@
 @use 'form-filme';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 /* RESET */
 * {
   margin: 0;
@@ -91,16 +92,24 @@ img {
 .cards {
   gap: 20px;
 }
+.card img {
+  width: 171px;
+  height: 260px;
+}
 .footer {
   background-color: var(--base-color-second);
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .footer-title {
   font: 700 1.25rem var(--title-font);
   color: var(--footer-color);
-  -webkit-font-smoothing: auto;
 }
 
-.box {
+.box-login {
   width: 31.25rem;
   padding: 2.5rem;
   position: absolute;
@@ -112,8 +121,8 @@ img {
   margin-top: 100px;
 }
 
-.box input[type='text'],
-.box input[type='password'] {
+.box-login input[type='text'],
+.box-login input[type='password'] {
   border: 0;
   background: none;
   display: block;
@@ -128,19 +137,19 @@ img {
   transition: 0.25s;
 }
 
-.box h1 {
+.box-login h1 {
   color: white;
   text-transform: uppercase;
   font-weight: 500;
 }
 
-.box input[type='text']:focus,
-.box input[type='password']:focus {
+.box-login input[type='text']:focus,
+.box-login input[type='password']:focus {
   width: 300px;
   border-color: var(--base-color);
 }
 
-.box input[type='submit'] {
+.box-login input[type='submit'] {
   border: 0;
   background: none;
   display: block;
@@ -155,7 +164,7 @@ img {
   cursor: pointer;
 }
 
-.box input[type='submit']:hover {
+.box-login input[type='submit']:hover {
   background: #2ecc71;
 }
 
@@ -163,66 +172,166 @@ img {
   text-decoration: underline;
 }
 
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 0;
+.contain {
+  width: 100%;
 }
 
-ul.social-network li {
-  display: inline;
-  margin: 0 5px;
-}
-
-.social-network a.icoFacebook:hover {
-  background-color: #3b5998;
-}
-
-.social-network a.icoTwitter:hover {
-  background-color: #33ccff;
-}
-
-.social-network a.icoGoogle:hover {
-  background-color: #bd3518;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoTwitter:hover i,
-.social-network a.icoGoogle:hover i {
-  color: #fff;
-}
-
-a.socialIcon:hover,
-.socialHoverClass {
-  color: #44bcdd;
-}
-
-.social-circle li a {
-  display: inline-block;
+.slider {
+  height: 14rem;
   position: relative;
-  margin: 0 auto 0 auto;
-  border-radius: 50%;
+  margin: 0;
+  padding: 0 4%;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+.slider h3 {
+  position: absolute;
+  top: 22px;
+  z-index: 30;
+}
+
+.slider .handle.handlePrev {
+  left: 1rem;
+}
+
+.slider .handle.handleNext {
+  right: 1rem;
+}
+
+.slider .handle.active {
+  cursor: pointer;
+}
+
+.slider .handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  width: 7%;
   text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--base-color);
+}
+
+.fa {
+  font-size: 46px;
+  margin-top: 120px;
+}
+.row {
+  overflow: hidden;
+}
+.row__inner {
+  -webkit-transition: 450ms -webkit-transform;
+  transition: 450ms -webkit-transform;
+  transition: 450ms transform;
+  transition: 450ms transform, 450ms -webkit-transform;
+  font-size: 0;
+  white-space: nowrap;
+  margin: 70.3125px 0;
+  padding-bottom: 10px;
+}
+
+.movies-card {
+  position: relative;
+  display: inline-block;
+  width: 13.75rem;
+  height: 16.25rem;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 450ms all;
+  transition: 450ms all;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.movies-card__img {
+  width: 13.75rem;
+  height: 16.25rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.movies-card__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  opacity: 0;
+  background: -webkit-linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-transition: 450ms opacity;
+  transition: 450ms opacity;
+}
+.movies-card__details:after,
+.movies-card__details:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: #000;
+}
+.movies-card__details:after {
+  margin-top: -25px;
+  margin-left: -25px;
   width: 50px;
   height: 50px;
-  font-size: 20px;
-}
-
-.social-circle li i {
-  margin: 0;
+  border: 3px solid #ecf0f1;
   line-height: 50px;
   text-align: center;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
-
-.social-circle li a:hover i,
-.triggeredHover {
-  transform: rotate(360deg);
-  transition: all 0.2s;
+.movies-card__details:before {
+  content: '▶';
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  margin-left: 7px;
+  margin-top: -13px;
+  text-align: center;
+  z-index: 2;
 }
-
-.social-circle i {
-  color: #fff;
-  transition: all 0.8s;
-  transition: all 0.8s;
+.movies-card:hover .movies-card__details {
+  opacity: 1;
+}
+.movies-card__title {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+.row__inner:hover {
+  -webkit-transform: translate3d(-62.5px, 0, 0);
+  transform: translate3d(-62.5px, 0, 0);
+}
+.row__inner:hover .movies-card {
+  opacity: 0.3;
+}
+.row__inner:hover .movies-card:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  opacity: 1;
+}
+.movies-card:hover ~ .movies-card {
+  -webkit-transform: translate3d(125px, 0, 0);
+  transform: translate3d(125px, 0, 0);
 }
