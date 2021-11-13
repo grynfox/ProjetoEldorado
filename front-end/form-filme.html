@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Cadastro de Filme</title>
-</head>
-<body>
-
-    <div class="form">
-        <h1 class="h1-form">Cadastro de Filme</h1>
-        <input id="nome" type="text" class="input1" placeholder="Nome">
-        <input id="sinopse" type="text" class="input1" placeholder="Sinopse">
-        <input id="data_lancamento"type="text" class="input1" placeholder="Data de Lançamento">
-        <input id="faturamento" type="number" class="input1" placeholder="Faturamento">
-        <input id="poster" type="text" class="input1" placeholder="Pôster">
-        <select id="genero_id" class="input1" name="genero">
-            <option value="1">Ação</option>
-            <option value="2">Terror</option>
-            <option value="3">Comédia</option>
-            <option value="4">Drama</option>
-        </select>
-        <div class="btn-form-container">
-            <button class="btn-form-filme" id="btn-cadastro-filme">Enviar</button>
-            <button class="btn-form-filme cancelar" style="border: 2px solid #fd0000;">Cancelar</button>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <form onsubmit="event.preventDefault()" class="box-login">
+              <h1>Login</h1>
+              <p class="title">Please enter your login and password!</p>
+              <input type="text" name="" placeholder="Nome" />
+              <input type="text" name="" placeholder="Sinopse" />
+              <input type="text" name="" placeholder="Data de Lançamento" />
+              <input type="text" name="" placeholder="" />
+              <input type="password" name="" placeholder="Password" />
+              <a class="forgot" href="#">Create Account</a>
+              <a class="forgot" href="#">Forgot password?</a>
+              <input
+                type="submit"
+                name=""
+                value="Login"
+                href="#"
+                onclick="window.location='catalogo.html';"
+              />
+              <div class="col-md-12"></div>
+            </form>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="form">
+      <h1 class="h1-form">Cadastro de Filme</h1>
+      <input id="nome" type="text" class="input1" placeholder="Nome" />
+      <input id="sinopse" type="text" class="input1" placeholder="Sinopse" />
+      <input
+        id="data_lancamento"
+        type="text"
+        class="input1"
+        placeholder="Data de Lançamento"
+      />
+      <input
+        id="faturamento"
+        type="number"
+        class="input1"
+        placeholder="Faturamento"
+      />
+      <input id="poster" type="text" class="input1" placeholder="Pôster" />
+      <select id="genero_id" class="input1" name="genero">
+        <option value="1">Ação</option>
+        <option value="2">Terror</option>
+        <option value="3">Comédia</option>
+        <option value="4">Drama</option>
+      </select>
+      <div class="btn-form-container">
+        <button class="btn-form-filme" id="btn-cadastro-filme">Enviar</button>
+        <button
+          class="btn-form-filme cancelar"
+          style="border: 2px solid #fd0000"
+        >
+          Cancelar
+        </button>
+      </div>
     </div>
     <script src="javascript/json-server.js" type="text/javascript"></script>
-</body>
+  </body>
 </html>
