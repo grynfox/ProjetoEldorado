@@ -2,16 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    table {
-        border: 2px solid #fca177;
-    
-    }
+
+  
     h1 {
         padding-bottom: 20px;
     }
     th {
-        background-color: #3498db;
+        background-color: var(--base-color-second);
     }
+}
+
+.table-border {
+    border: 2px solid #eb4d04;
+    border-radius: 10px;
 }
 
 
