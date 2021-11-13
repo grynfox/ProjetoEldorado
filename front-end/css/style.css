@@ -68,11 +68,11 @@
 :root {
   --header-height: 4.5rem;
   /* colors */
-  --hue: 36;
-  --hue-second: 0;
+  --hue: 357;
+  --hue-second: 196;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 100% 50%);
-  --base-color-second: hsl(var(--hue-second) 0% 0%);
+  --base-color: hsl(var(--hue) 86% 54%);
+  --base-color-second: hsl(var(--hue-second) 100% 44%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 100% 0%);
   --footer-color: hsl(var(--hue) 100% 50%);
@@ -90,7 +90,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: linear-gradient(to right, var(--base-color), var(--body-color));
+  background: linear-gradient(to right, var(--base-color), var(--base-color-second));
 }
 
 img {
@@ -179,35 +179,43 @@ img {
   background: var(--base-color-second);
   text-align: center;
   transition: 0.25s;
-  margin-top: 100px;
+  margin-top: 6.25rem;
+  border-radius: 3rem;
 }
 
 .box-login input[type=text],
 .box-login input[type=password] {
   border: 0;
-  background: none;
+  background: hsl(var(--hue-second), 100%, 50%);
   display: block;
-  margin: 20px auto;
+  margin: 1.25rem auto;
   text-align: center;
-  border: 2px solid #3498db;
-  padding: 10px 10px;
-  width: 250px;
+  border: 2px solid var(--base-color);
+  padding: 0.625rem 0.625rem;
+  width: 15.625rem;
   outline: none;
-  color: white;
-  border-radius: 24px;
+  color: var(--base-color-second);
+  border-radius: 1.5rem;
   transition: 0.25s;
 }
 
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--title-color);
+  opacity: 1;
+  /* Firefox */
+}
+
 .box-login h1 {
-  color: white;
+  color: var(--title-color);
   text-transform: uppercase;
   font-weight: 500;
 }
 
 .box-login input[type=text]:focus,
 .box-login input[type=password]:focus {
-  width: 300px;
-  border-color: var(--base-color);
+  width: 18.75rem;
+  border-color: var(--body-color);
 }
 
 .box-login input[type=submit] {
@@ -230,7 +238,7 @@ img {
 }
 
 .forgot {
-  text-decoration: underline;
+  color: var(--title-color);
 }
 
 .contain {
@@ -254,10 +262,12 @@ img {
 
 .slider .handle.handlePrev {
   left: 1rem;
+  color: var(--base-color-second);
 }
 
 .slider .handle.handleNext {
   right: 1rem;
+  color: var(--base-color);
 }
 
 .slider .handle.active {
@@ -287,10 +297,6 @@ img {
 .fa {
   font-size: 46px;
   margin-top: 120px;
-}
-
-.row {
-  overflow: hidden;
 }
 
 .row__inner {
