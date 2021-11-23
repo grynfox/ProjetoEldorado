@@ -1,19 +1,15 @@
 {
-    "type": "mysql",
-    "host": "eldorado_prime_db",
-    "port": 3306,
-    "username": "root",
-    "password": "root",
-    "database": "eldoradoprime",
-    "logging": false,
-    "entities": [
-       "src/Entities/*.ts"
-    ],
-    "migrations": [
-       "src/Database/Migrations/*.ts"
-    ],
-    "cli": {
-        "migrationsDir": "src/Database/Migrations",
-        "entitiesDir": "src/Entities"
-    }
- }
+  "type": "mysql",
+  "host": "eldoradomovies.cbkmk7gm8fbq.us-east-2.rds.amazonaws.com",
+  "port": 3306,
+  "username": "admin",
+  "password": "admin123",
+  "database": "eldoradoMovies",
+  "logging": false,
+  "entities": ["src/Entities/*.ts"],
+  "migrations": ["src/Database/Migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "src/Database/Migrations",
+    "entitiesDir": "src/Entities"
+  }
+}
