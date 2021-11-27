@@ -9,7 +9,7 @@ import {
 } from 'typeorm'
 
 @Entity()
-export default class Genero {
+export class Genero {
   @PrimaryGeneratedColumn('increment')
   public id_genero: number
 

@@ -20,7 +20,9 @@ app.use(
   express.static(resolve(__dirname, '..', 'public', 'static', 'uploads'))
 )
 
-createConnection().then(() => console.log('Database was connected successful!'))
+createConnection().then(() =>
+  console.log('Database  EldoradoMovies was connected successful!')
+)
 //app.use(pagination)
 app.use(router)
 
